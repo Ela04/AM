@@ -1,0 +1,7 @@
+{
+  "name": "ela",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
