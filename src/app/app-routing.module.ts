@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'practica',
+    loadChildren: () => import('./practica/practica.module').then( m => m.PracticaPageModule)
+  },
 ];
 
 @NgModule({
