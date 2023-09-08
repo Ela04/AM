@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'practica',
     loadChildren: () => import('./practica/practica.module').then( m => m.PracticaPageModule)
   },
+  {
+    path: 'listar',
+    loadChildren: () => import('./listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'crear',
+    loadChildren: () => import('./crear/crear.module').then( m => m.CrearPageModule)
+  },
+  {
+    path: 'header',
+    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
+  },
 ];
 
 @NgModule({

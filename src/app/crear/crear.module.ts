@@ -4,17 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PracticaPageRoutingModule } from './practica-routing.module';
+import { CrearPageRoutingModule } from './crear-routing.module';
 
-import { PracticaPage } from './practica.page';
+import { CrearPage } from './crear.page';
+
+import { HeaderModule } from '../header/header.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PracticaPageRoutingModule
+    CrearPageRoutingModule,
+    HeaderModule
   ],
-  declarations: [PracticaPage]
+  declarations: [CrearPage]
 })
-export class PracticaPageModule {}
+export class CrearPageModule {}
