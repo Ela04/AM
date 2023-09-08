@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./crear.page.scss'],
 })
 export class CrearPage implements OnInit {
-  formulariocrearempleado:FormGroup;
+formulariocrearempleado:FormGroup;
 
   constructor(private fb:FormBuilder) { 
     this.formulariocrearempleado=this.fb.group({

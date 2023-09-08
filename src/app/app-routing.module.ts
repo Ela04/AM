@@ -8,12 +8,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'listar',
     pathMatch: 'full'
-  },
-  {
-    path: 'practica',
-    loadChildren: () => import('./practica/practica.module').then( m => m.PracticaPageModule)
   },
   {
     path: 'listar',
@@ -22,11 +18,7 @@ const routes: Routes = [
   {
     path: 'crear',
     loadChildren: () => import('./crear/crear.module').then( m => m.CrearPageModule)
-  },
-  {
-    path: 'header',
-    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
-  },
+  }
 ];
 
 @NgModule({

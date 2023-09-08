@@ -5,6 +5,7 @@ import { StateService } from '../state/state.service';
 //Interfaz
 interface Empleados{
   nombre: string;
+  edad:number;
   cargo: string;
 }
 
@@ -45,6 +46,6 @@ export class ListarPage implements OnInit {
 
   irACrear(){
     this.stateService.setTitulo = 'Crear empleado'
-    this.router.navigate(['/crear-empleado'])
+    this.router.navigate(['/crear'])
   }
 }
