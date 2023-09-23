@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { TestGuard } from './guard/test.guard';
+
 
 const routes: Routes = [
   {
@@ -8,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'listar',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -18,16 +20,18 @@ const routes: Routes = [
   {
     path: 'crear',
     loadChildren: () => import('./crear/crear.module').then( m => m.CrearPageModule)
-  },  {
+  },
+  {
     path: 'publica',
     loadChildren: () => import('./publica/publica.module').then( m => m.PublicaPageModule)
   },
   {
     path: 'privada',
+    canActivate: [TestGuard],
     loadChildren: () => import('./privada/privada.module').then( m => m.PrivadaPageModule)
   }
 
-];
+]; //[]
 
 @NgModule({
   imports: [
