@@ -32,4 +32,8 @@ export class StateService {
 
 
   constructor(){}
+
+  getCharacters(): Observable<any>{
+    return this.rickymortyService
+  }
 }

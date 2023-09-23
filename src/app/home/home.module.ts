@@ -8,13 +8,18 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 
+import { HttpClientModule } from '@angular/common/http';
+import { RickymortyService } from '../service/rickymorty.service';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [RickymortyService],
 })
 export class HomePageModule {}
