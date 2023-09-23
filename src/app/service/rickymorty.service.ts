@@ -11,7 +11,7 @@ export class RickymortyService {
     //variable + contrato interfaz +
     private http: HttpClient){}
   
-  getCharacters(): Observable<any>{ 
+  getCharacters(){ //: Observable<any>{ 
     return this.http.get('https://rickandmortyapi.com/api/character')
   }
 }

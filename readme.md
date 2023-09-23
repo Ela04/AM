@@ -11,3 +11,11 @@ git merge estudiante
 git push u- origin estudiante
 git push
 git pull
+
+------------------
+componente: pequeño trozo reutilizable
+modulo: contiene todo lo necesario
+*guardian: metodo de seguridad
+estado: guarda temporalmente info para enviar
+inyeccion: importa lo necesario
+*persistencia de datos: datos duplicados?
