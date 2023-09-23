@@ -11,6 +11,7 @@ import { StateService } from '../state/state.service';
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
+
 export class HomePage implements OnInit{
   //nombre!: string;
   // constructor(private router:Router, private stateService:StateService) {
@@ -27,7 +28,8 @@ export class HomePage implements OnInit{
     private rickymortyService: RickymortyService,
     private stateService: StateService
   ){}
-
   
+  ngOnInit(){
     
+  }
 }
