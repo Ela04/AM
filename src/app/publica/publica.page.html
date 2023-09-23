@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>publica</ion-title>
+    <ion-title>publica </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,17 +14,21 @@
 
 <ion-content class="ion-padding">
   <form [formGroup]="formulariousuario">
+    
     <ion-item fill="outline">
       <ion-label position="floating">Nombre</ion-label>
       <ion-input placeholder="Nombre" formControlName="nombre"></ion-input>
     </ion-item> <br>
+
     <ion-item fill="outline">
       <ion-label position="floating" >Contraseña</ion-label>
       <ion-input placeholder="Contraseña" formControlName="contraseña"></ion-input>
     </ion-item>
   </form>
+
   <br>
-  <ion-button (click)="grabarusuaroi()">Ingresar</ion-button> 
+  <ion-button (click)="grabarusuario()">Ingresar</ion-button> 
   <br>
+
   <a routerLink="/restablecer">Recuperar Contraseña</a>
 </ion-content>

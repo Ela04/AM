@@ -24,12 +24,14 @@ export class PublicaPage implements OnInit {
 
   grabarusuario(){
     console.log("Ingresando a la funcion")
-    const Alumno={
+    const Usuario={
       nombre:this.formulariousuario.get('nombre')?.value,
       contraseña:this.formulariousuario.get('contraseña')?.value,
     }
-    console.log(Alumno)
-    this.stateService.setNombre = Alumno.nombre
+    console.log(Usuario)
+    this.stateService.setNombre = Usuario.nombre
     this.router.navigate(['home'])
   }
+
+  
 }

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { CanActivate } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -11,6 +11,7 @@ export class TestGuard implements CanActivate {
   ){}
 
   canActivate(): boolean {
+    let isLogged 
     this.router.navigate(['/home']);
     return false; //false no va a dejar entrar a la ruta, true si
   }
