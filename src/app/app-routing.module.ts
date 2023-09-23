@@ -18,7 +18,15 @@ const routes: Routes = [
   {
     path: 'crear',
     loadChildren: () => import('./crear/crear.module').then( m => m.CrearPageModule)
+  },  {
+    path: 'publica',
+    loadChildren: () => import('./publica/publica.module').then( m => m.PublicaPageModule)
+  },
+  {
+    path: 'privada',
+    loadChildren: () => import('./privada/privada.module').then( m => m.PrivadaPageModule)
   }
+
 ];
 
 @NgModule({
